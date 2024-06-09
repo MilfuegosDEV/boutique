@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentos Boutique</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* Estilos personalizados */
+        /* Puedes agregar estilos adicionales aquí */
+        .jumbotron {
+            background-image: url('https://via.placeholder.com/1500x600');
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+        body {
+            background-color: #f8f9fa;
+            min-height: 100vh;
+            position: relative;
+        }
+        .navbar {
+        min-height: 50px; /* Ajusta la altura de la barra de navegación */
+        }
+        .navbar-brand img {
+            max-height: 6%; /* Ajusta la altura del logo */
+            max-width: 90px;
+        }
+        .navbar-toggler {
+            padding: 0.25rem 0.5rem; /* Ajusta el padding del botón del toggler */
+        }
+        .navbar-nav .nav-link {
+            padding: 0.5rem 1rem; /* Ajusta el padding de los enlaces */
+        }
+        .container {
+            margin-top: 1px;
+            margin-bottom: 10px; /* Ajustamos el margen inferior para dejar espacio al footer */
+        }
+        .btn-primary {
+            margin-top: 76px;
+            background-color: #fbc2eb;
+            border-color: #fbc2eb;
+            color: #000;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #ff89c0;
+            border-color: #ff89c0;
+            color: #fff;
+        }
+        .btn-primary:focus {
+            box-shadow: none;
+        }
+        .footer {
+            background-color: #000000dc;
+            color: #fff;
+            text-align:center;
+            padding: 20px 0; /* Reducimos el padding superior e inferior */
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/Logo.jpg" alt="Logo de Momentos Boutique" style="width: 100px; height: 70px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Admin</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <a href="adminProductos.html" class="btn btn-primary d-block mb-4">Administrar Productos</a>
+            </div>
+            <div class="col-md-6">
+                <a href="adminCategoria.html" class="btn btn-primary d-block mb-4">Administrar Categorías</a>
+            </div>
+            <div class="col-md-6">
+                <a href="adminClientes.html" class="btn btn-primary d-block mb-4">Administrar Clientes</a>
+            </div>
+            <div class="col-md-6">
+                <a href="adminPedidos.html" class="btn btn-primary d-block mb-4">Administrar Pedidos</a>
+            </div>
+            <div class="col-md-6">
+                <a href="adminPagos.html" class="btn btn-primary d-block mb-4">Administrar Pagos</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Momentos Boutique. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Agrega el enlace al archivo JavaScript de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

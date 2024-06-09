@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastreo de Productos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .pending {
+            color: #ff9800;
+        }
+        .shipped {
+            color: #4caf50;
+        }
+        .received {
+            color: #2196f3;
+        }
+    </style>
+</head>
+<body>
+    
+<div class="container">
+    <h1>Rastreo de Productos</h1>
+    <form action="#" method="post">
+        <input type="text" name="tracking_code" placeholder="Ingrese el código de rastreo...">
+        <input type="submit" value="Buscar">
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Cliente</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Producto 1</td>
+                <td>Cliente A</td>
+                <td class="pending">Pendiente</td>
+            </tr>
+            <tr>
+                <td>Producto 2</td>
+                <td>Cliente B</td>
+                <td class="shipped">En camino</td>
+            </tr>
+            <tr>
+                <td>Producto 3</td>
+                <td>Cliente C</td>
+                <td class="received">Recibido</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
